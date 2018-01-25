@@ -1,0 +1,60 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 900px;
+    margin:5px auto; 
+}
+.container{
+    padding:5px;
+    border: 5px solid #000;
+
+
+border-radius: 25px;
+}
+
+h1,h2,h3,a{
+    font-family: 'Supermercado One', cursive;
+}
+h1{
+    color:#daa520;
+    font-size: 3.5em;
+}
+h2{
+    color:#0f0f0f;
+    font-size: 1.5em;
+}
+h3{
+    color:#070707;
+    font-size: 1em;
+}
+p{
+    font-size: 0.9em;
+}
+a{
+    font-size: 2.5em;
+}
+a:link,  a:visited {
+    color: rgb(55, 0, 128);
+}
+
+a:hover{
+    text-decoration: none;
+    color: brown;
+}
+    a:active {
+    color: yellow;
+}
+iframe{
+    width:600px;
+    height:450px;
+    border:0;
+    border-radius: 25px;
+    background-color: #000000;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+img{
+    border:0;
+    border-radius: 25px;
+    background-color: #000000;
+    box-shadow: 10px 10px 5px #888888;
+}
