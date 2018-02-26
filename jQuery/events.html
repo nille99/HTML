@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Events</h1>
+    <h2>Change background-color</h2>
+
+    <p>Text</p>
+    <p>Text</p>
+    <button>Klicka här</button>
+
+    <!-- Lägst ner på body -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").css("background-color",
+                    "yellow");
+            });
+        });
+    </script>
+
+
+    </head>
+
+</html>

@@ -1,17 +1,22 @@
 /*import font */
+/*-------*/
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+/*Body */
+/*-------*/
 body {
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     background-image: url('../images/bg-images.jpg');
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Menyer */
+/*-------*/
 .navbar h1 {
     display: inline;
     font-size: 24px;
@@ -24,8 +29,11 @@ body {
     color: #000;
 }
 
+/*Utsende av den container där all info finns*/
+/*-------*/
 .container{
     padding-top: 20px;
+    
 }
 .jumbotron{
     box-shadow: 6px 6px 8px #131212;
@@ -33,16 +41,12 @@ body {
 }
 
 
-.jumbotron p {
-    padding-bottom: 1em;
-}
-
-
-
+/*Text tagar*/
+/*-------*/
 /*Gruppering för h1 och h2 */
-h1,h2{
+h1,h2,h3{
     color: #1894d2;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Indie Flower', cursive;
 }
 
 h1{
@@ -50,13 +54,21 @@ h1{
 }
 
 h2{
-    font-size: 1.0em;
+    font-size: 2.0em;
 }
 
-p{
+h3{
+    font-size: 1.5em;
+}
+
+p ul{
     color: #000;
     font-size: 1em; 
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul{
+    text-align: left;
 }
 
 article p{
@@ -64,14 +76,70 @@ article p{
     margin: auto;
 }
 
+.jumbotron p {
+    padding-bottom: 1em;
+}
+
+/*Formulär*/
+/*-------*/
+.submitdiv{
+    text-align: right;
+    margin-top:0em;
+}
+.form-control{
+    margin: 0.2em 0em 0.2em 0em;
+}
+label{
+    margin: 0.2em 0em 0.2em 0em;
+}
+
+.form-group{
+    text-align: left;
+    margin: 2em 3em 2em 3em;
+}
+
+/*Bild*/
+/*-------*/
 article img{
     margin-bottom: 3em; 
 }
 /*Galleri*/
+/*-------*/
 #carouselExampleIndicators{
     margin: 2em auto 2em auto;
 }
+
+/*Gör transparent bg färg mellan bilden och den vita texten*/
+#carouselExampleIndicators .transparent{ 
+    background-color: hsla(50, 33%, 25%, 0.50);
+}
+
+/*Rubrik inställning på texten som ligger på bilden*/
+
+#carouselExampleIndicators h5{
+    font-size: 1.25em; 
+    font-family: 'Roboto', sans-serif;
+    color: #fff; 
+    
+}
+
+/*Text inställning på texten som ligger på bilden*/
+#carouselExampleIndicators p{
+    font-size: 1rem; 
+    font-family: 'Roboto', sans-serif;
+    color: #fff; 
+    
+}
+
+/*Storlek på fram och tillbaka knappen på */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+}
+
 /*Karta*/
+/*-------*/
 .map-responsive iframe{
     margin: 0em auto 0em auto;
     width:90%;
@@ -82,6 +150,7 @@ article img{
 }
 
 /*sidfot*/
+/*-------*/
 footer {
     background-color: #131212;
     color: #ddd;

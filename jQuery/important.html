@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>events important</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>events important</h1>
+    <h2>Change color</h2>
+    <!-- Lägst ner på body -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        .important {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+    </head>
+
+    <body>
+        <p id="demo1">Text</p>
+        <p id="demo2">Text</p>
+        <button id="add">Klicka här lägga till en css-klass</button>
+        <button id="remove">Klicka här ta till en css-klass</button>
+        <script>
+            $(document).ready(function () {
+                $("#add").click(function () {
+                    $("#demo1").addClass("important");
+                    //boostrap css
+                    $("#demo2").addClass("bg-warning");
+                });
+                $("#remove").click(function () {
+                    $("#demo1").removeClass("important");
+                    //boostrap css
+                    $("#demo2").removeClass("bg-warning");
+                });
+            });
+        </script>
+        </head>
+</html>

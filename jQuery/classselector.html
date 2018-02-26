@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class selector</title>
+</head>
+
+<body>
+    <h1>Class selector</h1>
+    <h2>Class-väljare</h2>
+
+    <h2 class="demo">Rubrik</h2>
+    <p class="demo">Text</p>
+    <button id="dolja">Klicka här för att dölja alla element som har class="demo”
+    </button>
+    <button id="visa">Klicka här för att visa alla element som har class="demo”
+    </button>
+
+    <!-- Lägst ner på body -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#visa").hide();
+            $("#dolja").click(function () {
+                $(".demo").hide();
+                $(this).hide();
+                $("#visa").show();
+            });
+            $("#visa").click(function () {
+                $(".demo").show();
+                $(this).hide();
+                $("#dolja").show();
+            });
+        });
+    </script>
+</body>
+
+</html>

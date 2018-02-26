@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>events toggleClass</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>events toggleClass</h1>
+    <h2>Change color add and remove in same</h2>
+    <!-- Lägst ner på body -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        .important {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+    
+
+   
+        <p id="demo">Text</p>
+        <button class="btn btn-outline">Klicka här</button>
+        <script>
+            $(document).ready(function () {
+                $("button").click(function () {
+                    $("#demo").toggleClass("important");
+                });
+            });
+        </script>
+        </body>
+
+</html>

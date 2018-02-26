@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toggle</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Toggle</h1>
+    <h2>show och gömma text och bytt text på knappen</h2>
+
+
+
+    <button id="demo" class="btn btn-outline-primary">Visa</button><br>
+    <p style="display:none">Lite text och annat smått och gott.</p>
+
+
+    <!-- Lägst ner på body -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+
+
+    <script>
+        $(document).ready(function () {
+            $("#demo").click(function () {
+                $("p").toggle(1000); //visa/Döjl
+                $(this).text(function (i, text) {
+                    return text === "Visa" ? "Dölj" : "Visa";
+                })
+            });
+        });
+    </script>
+
+</body>
+
+</html>

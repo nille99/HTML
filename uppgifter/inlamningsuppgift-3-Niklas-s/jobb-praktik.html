@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>The Webb design</title>
+    <link rel="icon" type="image/gif" href="images/icon-logga.ico" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Logga -->
+            <img src="images/logga.png" width="50" height="50" class="d-inline-block align-top" alt="logga">
+
+            <a class="navbar-brand" href="#">
+                <h1>The Webb design</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Meny -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Hem
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galleri.html">Projekt galleri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="jobb-praktik.html">Jobb/Praktik
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Arbetssatt &amp; tjanster
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="design-ux.html">Design &amp; ux</a>
+                            <a class="dropdown-item" href="e-handel.html">E-handel</a>
+                            <a class="dropdown-item" href="hosting-forvaltning.html">Hosting &amp; förvaltning</a>
+                            <a class="dropdown-item" href="sociala-medier.html">Sociala medier</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="adwords.html">AdWords</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="konakt.html">Konakt</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sök</button>
+                </form>
+            </div>
+        </nav>
+
+    </header>
+    <!-- container -->
+    <div class="container">
+        <div class="jumbotron">
+            <article>
+                <h1>Jobba hos oss</h1>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Vi söker löpande duktiga projektledare, webbutvecklare, designers och digitala strateger. Nedan hittar du de tjänster som
+                            är lediga idag men även om just ditt drömjobb inte är listat så är du mer än välkommen att skicka
+                            in en spontanansökan.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <form method="post" action="#" enctype="multipart/form-data">
+                        <h2>Skicka in en ansökan!</h2>
+                        <div class="form-group">
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="labelarbetstypform">Söker du Jobb eller Pratik:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select class="form-control" id="labelarbetstypform">
+                                        <option>Jobb</option>
+                                        <option>Pratik</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="labelfornamn">Ange ditt förnamn:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input class="form-control" id="labelfornamn" type="text" required placeholder="Ange ditt förnamn">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="labelefternamn">Ange ditt efternamn:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input class="form-control" id="labelefternamn" type="text" required placeholder="Ange ditt efternamn">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="labelemail">Ange ditt email adress:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input class="form-control" id="labelemail" type="email" required placeholder="Ange ditt giltig e-postadress">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="labeltn">Ange ditt telefonnummer:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input class="form-control" id="labeltn" type="number" required placeholder="Ange ditt giltig telefonnummer">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="labelarbetrsomrade">Arbetrsområde:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select class="form-control selectpicker" id="labelarbetrsomrade">
+                                        <option>Webbutveckling</option>
+                                        <option>Design</option>
+                                        <option>Marknadsförning</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="labelcv">Bifoga CV:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input class="form-control-file" type="file" id="labelcv">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="labelbrev">Bifoga personlig brev:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input class="form-control-file" type="file" id="labelbrev">
+                                </div>
+                            </div>
+                            <div class="col-md-12 submitdiv">
+                                <button type="submit" class="btn btn-primary">Skicka!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <footer class="container-fluid">
+        <p>&copy;
+            <time datetime="2018">2018</time> Webmaster: Niklas Säwensten Contact information:
+            <a href="mailto:info@thewebbdesign.com" class="text-primary">
+                info@thewebbdesign.com</a>
+        </p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
