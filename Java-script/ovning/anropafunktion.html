@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anroppa funktio</title>
+</head>
+<script>
+    function moms25(pris) {
+        return pris * 1.25;
+    } 
+    function moms12(pris) {
+        return pris * 1.12;
+    } 
+    function moms06(pris) {
+        return pris * 1.06;
+    } 
+    function moms(pris, moms) {
+        return pris * moms;
+    } 
+</script>
+
+<body>
+    <h1>Anroppa funktion</h1>
+<h2>Moms25</h2>
+    <p id="demo"></p>
+    <script>
+        var pris = 100;
+        var el = document.getElementById('demo');
+        el.innerHTML = moms25(pris);
+    </script>
+<h2>Moms12</h2>
+<p id="demo12"></p>
+<script>
+    var pris = 100;
+    var el = document.getElementById('demo12');
+    el.innerHTML = moms12(pris);
+</script>
+
+<h2>Moms25</h2>
+    <p id="demo06"></p>
+    <script>
+        var pris = 100;
+        var el = document.getElementById('demo06');
+        el.innerHTML = moms06(pris);
+    </script>
+
+<h2>Moms</h2>
+    <p id="demoMoms"></p>
+    <script>
+        document.getElementById('demoMoms').innerHTML = moms(5, 5);
+    </script>
+</body>
+
+</html>

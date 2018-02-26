@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 5</title>
+</head>
+<body>
+    <h1>JavaScript - Exempel 5</h1>
+    <h2>Fält (Array)</h2>
+    <p id="fname"></p>
+    <p id="lname"></p>
+    <p id="age"></p>
+    <p id="x"></p>
+    <p id="y"></p>
+    <p id="z"></p>
+
+    <script>
+    // Skapa en array
+    var person = ["Mahmud" , "Al Hakim" , 1973];
+    // Arbeta med array
+    // Med indexering kommer vi åt våra element 
+    // t.ex. person[0] för att hämta det första elementet
+    document.getElementById("fname").innerHTML = person[0];
+    document.getElementById("lname").innerHTML = person[1];
+    document.getElementById("age").innerHTML = person[2];
+    
+    // Skicka en hel array
+    document.getElementById("x").innerHTML = person;
+    document.getElementById("y").innerHTML = person.join(" ");
+    document.getElementById("z").innerHTML = person.join(";");
+    </script>
+</body>
+</html>

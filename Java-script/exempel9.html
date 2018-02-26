@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 9</title>
+
+
+</head>
+
+<body>
+    <h1>exempel 9</h1>
+    <h2>Datumhantering</h2>
+    <p id="datum"></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias quasi consequuntur quos blanditiis aliquam sit
+        unde obcaecati? Aliquam expedita dolor at iure voluptatibus quia ipsum placeat pariatur quibusdam eos.</p>
+    <h2>Rubrik 2</h2>
+    <footer id="footer">
+        <hr>Cobyright &copy;</footer>
+    <script>
+
+        // Skapa ett datumobjekt
+        var d = new Date();
+        //  Skapa en referens till p-taggen
+        var p = document.getElementById("datum");
+        // Visa innehållet i datumobjektet
+        p.innerHTML = d + "<br>";
+        // Hänta år från datumobjektet
+        p.innerHTML += d.getFullYear();
+
+        //  Skapa en referens till sidfoten
+        var footer = document.getElementById("footer");
+        // Hänta år från datumobjektet med metoden getFullYear()
+        footer.innerHTML += d.getFullYear();
+
+    </script>
+</body>

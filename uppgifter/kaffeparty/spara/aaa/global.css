@@ -1,0 +1,231 @@
+/* Reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section, menu,
+time, mark, audio, video {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}                  
+article, aside, figure, footer, header, hgroup, nav, section {display:block;}
+ul, ol {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';content:none;}
+a {margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none;}
+ins {background-color:#ff9;color:#000;text-decoration:none;}
+mark {background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}
+del {text-decoration:line-through;}
+abbr[title], dfn[title] {border-bottom:1px dotted #000;cursor:help;}
+table {border-collapse:collapse;border-spacing:0;}
+hr {display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
+input, select {vertical-align:middle;}
+/* END Reset */
+
+/* Font Styles */
+@font-face {font-family:'AmaranthRegular';src:url('Amaranth-webfont.eot');src:url('Amaranth-webfont.eot?#iefix') format('embedded-opentype'), url('Amaranth-webfont.woff') format('woff'), url('Amaranth-webfont.ttf') format('truetype'), url('Amaranth-webfont.svg#AmaranthRegular') format('svg');font-weight:normal;font-style:normal;}
+@font-face {font-family:'RokkittRegular';src:url('Rokkitt-webfont.eot');src:url('Rokkitt-webfont.eot?#iefix') format('embedded-opentype'), url('Rokkitt-webfont.woff') format('woff'), url('Rokkitt-webfont.ttf') format('truetype'), url('Rokkitt-webfont.svg#RokkittRegular') format('svg');font-weight:normal;font-style:normal;}
+.amaranth {font-family:'AmaranthRegular', arial, helvetica, verdana;}
+.rokkit {font-family:'RokkittRegular', verdana, arial, helvetica;}
+/* END Font Styles */
+
+/* Header */
+#headwrap {background:#000; }
+#headwrap_m { display: none; background: black; }
+#header {height:90px;vertical-align:middle;}
+.logo {margin-top:24px;}
+#kundnav {right:-8px;top:10px;font-size:13px;}
+#kundnav li {display:inline;margin:0 8px 0 0;}
+#kundnav a {color:#ccc;}
+#kundnav a:hover {text-decoration:underline;}
+#nav {right:0;top:32px;font-size:20px;}
+#nav li {display:inline;margin:0 0 0 10px;}
+#nav a {color:#fff;padding:0 0 3px;border-bottom:5px solid #000;}
+#nav a:hover {border-color:#fff;}
+#nav .on {border-color:#ec008c;}
+/* END Header */
+
+/* Stripes */
+#stripcontainer {position:relative;height:145px;overflow:hidden;}
+.pinkwrap {background:url(/images/pinkstripe.png) 50% 0 repeat-x;}
+.christmaswrap {background:url(/images/jultider.jpg) 50% 0 repeat-x;}
+.sokmotorwrap {background:url(/images/sommarkampanj2012.jpg) 50% 0 repeat-x;}
+.referenswrap {background:url(/images/referensvinjett.jpg) 50% 0 repeat-x;}
+.stripe {height:145px;}
+.slogan {font-size:36px;top:35px;}
+.slogan h1 {font-size:36px;}
+.sokmotor {right:0;font-size:20px;}
+.pris {right:48px;top:70px;font-size:24px;width:250px;}
+.pris h2 {font-size:24px;}
+.bstripewrap {background:url(/images/blackstripe.png) 50% 0 repeat-x;}
+.bstripe {font-size:36px;height:63px;padding-top:37px;}
+/* END Stripe */
+
+/* Frontpage */
+.m_front {background:url(/images/gruppbild.jpg) 100% 110px no-repeat;}
+#tresteg {font-size:26px;line-height:50px;margin-top:10px;}
+#tresteg a { color: black; }
+#tresteg p {margin:0;}
+.steg {padding-left:20px;}
+.vihjalper {right:110px;top:70px;}
+.heart {bottom:10px;left:315px;}
+#feedback {width:400px;margin-top:15px;}
+#refwrap {background:url(/images/splatter.jpg) 50% 0 repeat-x;}
+.refwrap span { display: none; }
+#references {height:840px;padding:30px 0 0;}
+.refwrap {width:466px;height:323px;background:url(/images/referensram.png) 50% 0;margin:0 18px 30px 0;}
+.refwrap img {margin:6px 0 0 12px;border:4px solid #fff;border-radius:6px;}
+.refinfo {bottom:6px;left:12px;height:24px;padding:6px 10px 0 10px;width:422px;background:#fff;border-radius:0 0 6px 6px;}
+.refwrap:hover .refinfo {background:#000;color:#fff;}
+.refwrap:hover img {border-color:#000;}
+#refgallerywrapper { height:706px;overflow:hidden; }
+#refgallery_paginator {text-align:center;width:750px;margin:0 auto 20px;background:#fff;border-radius:3px;height:30px;-webkit-box-shadow:0 0 3px rgba(0,0,0,0.5);-moz-box-shadow:0 0 3px rgba(0,0,0,0.5);box-shadow:0 0 3px rgba(0,0,0,0.5);}
+#refgallery_paginator span {line-height:30px;}
+#refgallery_paginator a {color:black;line-height:30px;}
+#refgallery_paginator a:hover, #refgallery_paginator .on {color:#ec008c;}
+#reftext {background:url(/images/referenstext.png) 50% 0 no-repeat;width:910px;height:55px;line-height:55px;margin-left:5px;padding-left:30px;font-size:15px;}
+#reftext:hover {background-position:50% -55px;color:#000;}
+.refarrow {right:25px;bottom:15px;}
+/* END Frontpage */
+
+/* Om Oss */
+.m_omoss {background:url(/images/gruppbildnamn.jpg) 100% 110px no-repeat;padding-bottom:100px;}
+.saghej {top:50px;right:50px;}
+.hemsidorhjarta {right:100px;top:580px;}
+.testaoss {bottom:10px;left:100px;}
+/* END Om Oss */
+
+/* Kontakta */
+.tillformular {left:510px;top:43px;}
+.ringmigtp {right:-30px;top:15px;}
+.ringmigcs {right:-40px;top:18px;}
+.ringdiv:hover .ringmig {visibility:visible;}
+.kontaktlapp {width:307px;height:319px;padding:20px 30px;background:url(/images/kontaktlapp.jpg);display:block;}
+/* END Kontakta */
+
+/* Footer */
+#footwrap {background:url(/images/footer.png) 50% 0 repeat-x;}
+#footer {padding-bottom:30px;}
+
+#sitemapwrap { background: black; }
+#sitemap
+{
+	height: 60px;
+	padding-top: 20px;
+	font-size:11px;
+}
+
+#sitemap A { color:white; }
+#sitemapwrap #sitemap A:hover { color:white text-decoration:underline; }
+
+.footcol_mobile { display: none; }
+
+.footcol {width:310px;margin-top:30px;height:450px;min-height:450px;}
+.footcol_m {width:250px;padding:0 30px;}
+.footcol_r {width:280px;padding:0 0 0 30px;}
+.footdots {background:url(/images/footdots.png) 100% 0 repeat-y;}
+.facebook {width:170px;height:168px;background:url(/images/facebook.png);margin-bottom:5px;}
+.facebook:hover {background-position:0 -168px;}
+#footer .text {background:#930057;}
+#footer textarea {background:#930057;}
+#footer .text:active, #footer .text:focus, #footer textarea:active, #footer textarea:focus {background:#fff;color:#000;}
+#footer .button:hover {background:#fff;color:#000;}
+.footsmilie {right:30px;top:-5px;}
+/* END Footer */
+
+/* Global Styles */
+body {background:#ec008c;font:14px 'AmaranthRegular', arial, helvetica, verdana;}
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;font-size:0;}
+.cleft {clear:left;}
+h1 {font-size:36px;}
+h2 {font-size:28px;}
+h3 {font-size:20px;}
+h4 {font-size:16px;margin-bottom:1em;}
+p {margin:0 0 1.2em;}
+ol {margin:0 0 0 30px;list-style-type:decimal;}
+.blist {margin:0 0 0 30px;list-style:disc;}
+th {text-align:left;}
+label {margin:10px 0 3px;}
+textarea {width:260px;height:100px;background:#eee;color:#000;border:0;border-radius:3px;padding:5px;}
+.text {width:260px;background:#eee;border:0;border-radius:3px;color:#000;padding:5px;}
+.text:active, .text:focus, textarea:active, textarea:focus {background:#000;color:#fff;}
+.button {background:#000;border:0;color:#fff;padding:5px;border-radius:3px;margin:10px 30px 0 0;}
+.button:hover {background:#666;color:#fff;}
+#main {width:950px;padding-top:35px;}
+#contentwrap {background:#fff;}
+.bulletlist li {list-style-image:url(/images/bullet.png);margin-bottom:1em;}
+.linkicon {width:15px;height:14px;background:url(/images/linkicon.png) no-repeat;display:inline-block;margin-bottom:6px;}
+.m0 {margin:0;}
+.mr0 {margin-right:0;}
+.mb {margin-bottom:1em;}
+.mbhalf {margin-bottom:0.5em;}
+.mt {margin-top:1em;}
+.mt30 {margin-top:30px;}
+.mt100 {margin-top:145px;}
+.mr30 {margin-right:30px;}
+.mb30 {margin-bottom:30px;}
+.ml30 {margin-left:30px;}
+.mr70 {margin-right:70px;}
+.pb30 {padding-bottom:30px;}
+.ph12 {padding:0 12px;}
+.p_r {position:relative;}
+.p_a {position:absolute;}
+.f_r {float:right;}
+.f_l {float:left;}
+.w100 {width:100%;}
+.w950 {width:950px;}
+.w420 {width:420px;}
+.w450 {width:450px;}
+.w500 {width:500px;}
+.w600 {width:600px;}
+.block {display:block;}
+.ul:hover {text-decoration:underline;}
+.italic {font-style:italic;}
+.uc {text-transform:uppercase;}
+.bold {font-weight:bold;}
+.centered {margin:0 auto;}
+.center {text-align:center;}
+.left {text-align:left;}
+.normal {font-weight:normal;}
+.black, #main .black {color:#000;}
+.white {color:#fff;}
+#main a {color:#ec008c;}
+#main a:hover {text-decoration:underline;}
+#main a.anchor { color: #000; }
+#main a.anchor:hover { color: #000; text-decoration: none; }
+.pink {color:#ec008c;}
+.pointer {cursor:pointer;}
+.hidden {display:none;}
+.invisible {visibility:hidden;}
+.h2h1 { font-size: 36px; }
+.pdf {padding:2px 0 2px 20px;background:url(/images/pdf.png) 0 50% no-repeat;}
+/* END Global Styles */
+
+/* Transitions */
+.refwrap:hover .refinfo, .refwrap:hover img, #reftext:hover, #nav a:hover, .ringdiv:hover .ringmig {-moz-transition:all 0.3s ease-in-out 0s;-webkit-transition:all 0.3s ease-in-out 0s;transition:all 0.3s ease-in-out 0s;}
+
+/* Popups */
+.formvalidation {position:absolute;background:#000;color:#fff;border-radius:3px;padding:4px 6px;display:none;width:188px;}
+.contact_name, .contact_name_cform {left:280px;top:124px;}
+.contact_phone, .contact_phone_cform {left:280px;top:181px;}
+.popupform .contact_name, .popupform .contact_name_cform {left:292px;top:21px;}
+.popupform .contact_phone, .popupform .contact_phone_cform {left:292px;top:78px;}
+.webmail-login-box {background:white;padding:10px;}
+.webmail-login-box INPUT { margin-bottom: 6px; }
+.webmail-login-box .login-username { width: 240px; }
+.webmail-login-box .login-password { width: 240px; }
+.refdiv {padding:20px;}
+
+.m400 { min-height: 400px; }
+
+.anchor { color:red; cursor:default;}
+.anchor:hover { color:#000; text-decoration:none; }
+
+#smtplist TD, #smtplist TH
+{
+	padding:2px;
+}
+
+#smtplist TR:hover { background:#000; color:#fff; }
+#smtplist .even { background: #ccccdd; color:black; }
+
+.thethumbcontainer { background:url(/images/ajax-loader.gif) 220px 140px no-repeat;width:434px;height:303px;margin:0;padding:0; }
+
+.mobileonly { display: none; }

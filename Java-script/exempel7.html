@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 7</title>
+</head>
+
+<body>
+    <h1>JavaScript - Exempel 7</h1>
+    <h2>Stränghantering</h2>
+    <p id="demo" style="font-size: 3em;"></p>
+
+    <script>
+        var p = document.getElementById("demo"); // Referens till p-taggen
+        var namn = "     Mahmud \"Al\" Hakim              ";
+        // Rensa blanka tecken före och efter strängen 
+        // OBS! Namnet innehåller mellanslag före och efter
+        namn = namn.trim();
+        p.innerHTML = "<h2>" + namn + "</h2>";
+        p.innerHTML += "Antal tecken: " + namn.length + "<br>";
+        p.innerHTML += "Konvertera till versaler: " + namn.toUpperCase() + "<br>";
+        p.innerHTML += "Konvertera till gemener: " + namn.toLowerCase() + "<br>";
+        var arr = namn.split(" "); // OBS! Mellanslaget inne i split
+        p.innerHTML += "Konvertera till en array: " + arr + "<br>";
+        p.innerHTML += "Förnamnet är " + arr[0] + "<br>";
+        // En strängliteral som sträcker sig över flera rader
+        // Använd ${} för att infoga variabler i strängen
+        // Detta kallas "String Interpolation"
+        var text = `
+                    <h2>${namn}</h2> 
+                    <h3>Rubrik 3</h3>
+                    <p>Lorem ipsum dolor sit amet...</p>
+        `;
+        p.innerHTML += text;
+        // OBS! Vi får inte byta rad om vi använder citationstecken ""
+        // Använd istället backticks `
+        // Exempel från Wikipedia
+        // https://en.wikipedia.org/wiki/String_interpolation#JavaScript
+        var apples = 4;
+        var bananas = 3;
+        console.log(`I have ${apples} apples`);
+        console.log(`I have ${apples + bananas} fruit`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 6</title>
+    <style>
+    body{
+        font-size: 2em;
+    }
+    </style>
+</head>
+<body>
+    <h1>JavaScript - Exempel 6</h1>
+    <h2>Operatorer</h2>
+    <p id="demo"></p>
+
+    <script>
+    var p = document.getElementById("demo");
+    p.innerHTML = "TEST";
+    var tal1 = 10;
+    var tal2 = 20;
+    var summa = tal1+tal2;
+    p.innerHTML = "Summa: " + summa + "<br>"; 
+    // OBS! Tilldelning skriver över gammalt innehåll 
+    // (skriver över TEST)
+    // Lägg till innehåll med += 
+    p.innerHTML += "tal1 < tal2 = " + (tal1<tal2) + "<br>"; // Boolean
+    p.innerHTML += "tal1 > tal2 = " + (tal1>tal2) ; // false
+    </script>
+</body>
+</html>

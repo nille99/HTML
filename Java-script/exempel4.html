@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 3</title>
+</head>
+<body>
+    <h1>JavaScript - Exempel 3</h1>
+    <h2>Arbeta med objekten document och element</h2>
+    <p>OBS! Viktigt att kunna arbeta med metoden <br>
+      getElementById och egenskapen inneHTML
+    </p>
+    <p id="demo1"></p>
+    <div id="demo2"></div>
+    <script>
+    document.getElementById("demo1").innerHTML = 
+       "JavaScript kan manipulera HTML-element!";
+    document.getElementById("demo2").innerHTML = 
+       "<h3>En rubrik skapad i JavaScript</h3>";
+    </script>
+
+    <h1>JavaScript - Exempel 4</h1>
+    <h2>Variabler</h2>
+    <p id="demo3"></p>
+
+    <script>
+     // Deklarera och initiera en variabel
+     var namn = "Niklas Säwensten";
+     document.getElementById("demo3").innerHTML = namn;
+    </script>
+</body>
+
+</html>

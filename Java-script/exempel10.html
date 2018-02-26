@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 10</title>
+</head>
+<body>
+    <h1>Exempel 10</h1>
+    <h2>Arbeta med objekt i javaScrip</h2>
+
+    <script>
+    
+    // Skapa ett objekt med en konstruktor (constructor Notation)
+    var obj = new Object();
+
+    // Skapa en ny egenskap
+    obj.name = "niklas Säwensten";
+   
+    // Skapa en ny metod
+    obj.hello = function(){
+     console.log("Hej " + obj.name);
+    }
+    
+    //Anropa av metoden hello
+    obj.hello();
+
+    // Skapa ett objekt med {} (literal notation)
+    var person = { //OBS! {} istället för new Object()
+        name : "Kalle Anka" , // OBS! Kommatecken
+        hello : function(){
+            console.log("Hello " + person.name); 
+        }
+    }
+    //Anropa av metoden hello i objektet person
+    person.hello();
+
+    //Skapa em klass i JavaScript
+    class Person{
+        constructor(firstname, lastname){
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+        fullnamn(){
+            return this.firstname + " " + this.lastname;
+        }
+    }
+
+    //Skapa en instans av klassen Person
+    var p1 = new Person("Niklas","säwensten")
+    console.log(p1.firstname);
+    console.log(p1.lastname);
+    console.log(p1.fullnamn()); // OBS! en metod glöm ej ()
+    console.log(p1);//Skickar hela objektet
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+@media only screen and (max-device-width: 1024px)
+{
+	h1 { font-size: 24px; }
+	#contentwrap { padding:10px; }
+	#headwrap { display:none; } 
+	#headwrap_m { display: block; }
+	#stripcontainer { display: none; }
+	#header { text-align: center; height:auto; }
+	#main { width:100%; padding-top: 0; }
+	.m_front, .m_omoss { background: #fff; }	
+	.w950 { width: 100%; }
+	#reftext { margin-left: 10px; display: none;} 
+	#feedback { width: 100%; }     
+	#references { height: 430px; width: 100%; padding-top: 0; }
+	#refwrap { background-repeat: repeat; padding: 10px; display:none; }
+	#refwrap.forcerefs { display: block; }
+	#refgallerywrapper { height:auto;overflow:hidden; }
+	#refgallery_paginator { width: 100%; height:auto; margin-bottom: 10px;  }
+	.bstripe { height: auto; padding-top: 5px; }
+	.bstripewrap { background: black; padding-left: 20px; display: none; }
+	.tillformular, .paket, .hemsidorhjarta, .saghej, .vihjalper { display: none; }
+	.w450 { float: none; }
+	.mt100 { margin-top: 10px; }
+	.pb30 { padding-bottom: 0px; }
+	.bulletlist { margin-left: 30px; }
+	.w500, .w420, .w450 { width: 100%; }
+	.refwrap { width: 47%; height:175px; background: none; margin-bottom: 10px; }
+	#refgallerywrapper { padding-left: 0px; }
+	.refwrap img { margin-left: 0; width: 190px; }             
+	.refinfo { left: 0; width:85%; height:38px; }                  
+	#footwrap { padding: 10px; background: #000; color: #fff; }
+	#footwrap .black { color: white; }
+	#contact_form { margin-top: 0; width: 100%; }
+	.footdots { background: none; }
+	.footsmilie { right: 0px; }
+	#footer .text { width: 97%; }
+	#footer textarea { width: 97%; }
+	.footcol { padding-top: 0px; margin:0; margin-top: 20px; padding: 0; height: auto; min-height: 0px;}
+	.footcol_r, .footcol_m { width: 100%; }	 
+	.footcol_m, .footcol_r { display: none; }
+	.footcol_mobile { display: block; }
+	.facebook { float: right; margin-right: 5px; margin-top: 20px;}
+	#sitemapwrap { padding: 0 20px; background: #7e7e7e; }
+	body { margin: 0; padding: 0; width: 100%; }
+	#nav, #mnav
+	{
+		clear: both;	
+		position: relative;
+		top: 0;
+		font-size: 11px;
+		margin-top: 10px;
+	}
+	#nav li { margin-left: 10px; }
+	#nav .first { margin-left: 0; }
+	.logo { margin-top: 10px; }
+	h3 { font-size: 14px; }
+	#tresteg { font-size: 20px; line-height: 35px; }
+	.heart { display: none; }
+	.blikund { width: 300px; }
+	.thethumbcontainer {
+		background:none;width:203px;height:143px;margin:0;padding:0;
+	}
+	.thethumbcontainer img { width:65%; }
+	#contactbox, #linkbox { float:left; width:100%; }
+	#facebookbox, #heartbox { float:right; width:100%; display: none; }
+	.kontaktlapp { float: none; margin: 0 auto;  margin-bottom: 20px; }
+	.ringmigtp, .ringmigcs { right: 0px; display: block; visibility: visible; top: 100px;  }
+	.mobileonly { display: block; }
+}
+
+@media only screen and (min-width: 321px)
+{
+
+}
+
+/*
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)
+{
+	h1 { font-size: 24px; }
+	#contentwrap { padding:10px; }
+	#headwrap { display:none; } 
+	#headwrap_m { display: block; }
+	#stripcontainer { display: none; }
+	#header { text-align: center; height:auto; }
+	#main { width:100%; padding-top: 0; }
+	.m_front, .m_omoss { background: #fff; }	
+	.w950 { width: 100%; }
+	#reftext { margin-left: 10px; display: none;} 
+	#feedback { width: 100%; }     
+	#references { height: 680px; width: 100%; padding-top: 0; }
+	#refwrap { background-repeat: repeat; padding: 10px; display:none; }
+	#refwrap.forcerefs { display: block; }
+	#refgallerywrapper { height:auto;overflow:hidden; }
+	#refgallery_paginator { width: 100%; height:auto; margin-bottom: 10px;  }
+	.bstripe { height: auto; padding-top: 5px; }
+	.bstripewrap { background: black; padding-left: 20px; display: none; }
+	.tillformular, .paket, .hemsidorhjarta, .saghej, .vihjalper { display: none; }
+	.w450 { float: none; }
+	.mt100 { margin-top: 10px; }
+	.pb30 { padding-bottom: 0px; }
+	.bulletlist { margin-left: 30px; }
+	.w500, .w420, .w450 { width: 100%; }
+	.refwrap { width: 48%; height:310px; background: none; margin-bottom: 10px; }
+	#refgallerywrapper { padding-left: 0px; }
+	.refwrap img { margin-left: 0; width: 358px; }             
+	.refinfo { left: 0; width:345px; height:38px; }                  
+	#footwrap { padding: 10px; background: #000; color: #fff; }
+	#footwrap .black { color: white; }
+	#contact_form { margin-top: 0; width: 100%; }
+	.footdots { background: none; }
+	.footsmilie { right: 0px; }
+	#footer .text { width: 97%; }
+	#footer textarea { width: 97%; }
+	.footcol { padding-top: 0px; margin:0; margin-top: 20px; padding: 0; height: auto; min-height: 0px; width: 50%;}
+	.footcol_r, .footcol_m { width: 50%; }	 
+	.footcol_m, .footcol_r { display: none; }
+	.footcol_mobile { display: block; }
+	.facebook { float: right; margin-right: 5px; margin-top: 20px;}
+	#sitemapwrap { padding: 0 20px; background: #7e7e7e; }
+	body { margin: 0; padding: 0; width: 100%; }
+	#nav, #mnav
+	{
+		clear: both;	
+		position: relative;
+		top: 0;
+		font-size: 15px;
+		margin-top: 15px;
+		padding-bottom: 10px;
+	}
+	#nav li { margin-left: 10px; }
+	#nav .first { margin-left: 0; }
+	.logo { margin-top: 10px; }
+	h3 { font-size: 14px; }
+	#tresteg { font-size: 20px; line-height: 35px; }
+	.heart { display: none; }
+	.blikund { width: 300px; }
+	.thethumbcontainer {
+		background:none;width:203px;height:143px;margin:0;padding:0;
+	}
+	#contactbox, #linkbox { float:left; width:100%; }
+	#facebookbox, #heartbox { float:right; width:100%; display: none; }
+	.kontaktlapp { float: none; margin: 0 auto;  margin-bottom: 20px; }
+	.ringmigtp, .ringmigcs { right: 0px; display: block; visibility: visible; top: 100px;  }
+	.mobileonly { display: block; }
+}
+*/
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+}
